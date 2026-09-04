@@ -1,0 +1,151 @@
+# Ascent Proxy remote data - raw file fetched at startup ("Please Wait. Finished!"), never saved to disk.
+# Lines are key|value; lines starting with # are ignored. Keys the proxy uses:
+#   GrowtopiaPattern_FPS   byte pattern of the Growtopia frame cap (? = any byte), written as monitor Hz x 1.5
+#   Growtopiam_server      Growtopia server IP used when growtopia1.com server_data cannot be fetched
+#   Port                   Growtopia ports separated by |, the first one is used
+#   itemsdatBackup         URL of an items.dat downloaded when neither the game cache nor the exe folder has one
+#   FunFact                console fun facts of the /options funfacts checkbox (one per line, colour codes allowed)
+#   AddCommandAsWarpWorld  cmd|url or WORLD|description - /cmd warps to WORLD, or fetches the url and warps to the world name in the reply
+#   ProxyVersion           when set and different from the proxy's own version (1.69) the proxy shows UpdateMessage and closes
+#   UpdateMessage          console text of that version block (colour codes allowed)
+#   LoginMessage1..5       console (OnConsoleMessage) lines sent to the player right after the login, empty = skipped
+#   ProxyServer / ProxyServerPort  address of the Ascent proxy server (overrides ascent_auth.cfg)
+#   Discord                text after "Developer Discord:" on the /proxy page
+#   PostAPI / PostAddress  where the real server_data.php is fetched (default https://www.growtopia1.com + /growtopia/server_data.php)
+#   AddModsList            userid|name| - players with these user ids count as moderators for mod detect
+#   server_data_Start/End  the server_data.php answer given to the game; first %s = proxy address, second %s = meta; port must stay 17191
+
+GrowtopiaPattern_FPS|E9 ? ? ? ? E8 ? ? ? ? 89 74 24 28 89 74 24 20 0F 57 DB 0F 28 D7 BA 13 00 00 00 48 8B C8
+
+Growtopiam_server|213.179.209.175
+
+Port|17043|17047|17041|17045|17042
+
+itemsdatBackup|https://keyauth.silviozas.com/images/items.dat
+
+AddCommandAsWarpWorld|ju|http://proxy.silviozas.com:15461/teamju/world|Warps To TEAMJU Casino Link World
+AddCommandAsWarpWorld|shon|http://proxy.silviozas.com:15461/teamshon/world|Warps To TEAMSHON Casino Link World
+AddCommandAsWarpWorld|yt|http://proxy.silviozas.com:15461/teamyt/world|Warps To TEAMYTGT   (BJ Team)   Casino Link World
+AddCommandAsWarpWorld|pik|http://proxy.silviozas.com:15461/teambj/world|Warps To TEAMPIK_GT (REME Team) Casino Link World
+AddCommandAsWarpWorld|yon|http://proxy.silviozas.com:15461/teamyon/world|Warps To TEAM_YON Casino Link World
+AddCommandAsWarpWorld|octa|http://proxy.silviozas.com:15461/teamocta/world|Warps To TEAM_OCTA Casino Link World
+AddCommandAsWarpWorld|resky|http://proxy.silviozas.com:15461/teamresky/world|Warps To TEAM_RESKY Casino Link World
+AddCommandAsWarpWorld|max|http://proxy.silviozas.com:15461/teammax/world|Warps To TEAM MAX Casino Link World
+AddCommandAsWarpWorld|flow|http://proxy.silviozas.com:15461/teamflow/world|Warps To TEAM FLOW Casino Link World
+
+FunFact|`b[`9Fun Fact``]`` `cYou Can Change Your `5Country Flag`` With A Command `5"/country"``.
+FunFact|`b[`9Fun Fact``]`` `cFirst Premium Proxy V1 Was Released For A Cost Of `51 Diamond Lock.
+FunFact|`b[`9Fun Fact``]`` `cYou Might `bNot`` Know.
+FunFact|`b[`9Fun Fact``]`` `cYou Might Know.
+FunFact|`b[`9Fun Fact``]`` `cThis Proxy Creator Is A Very Busy Man.
+FunFact|`b[`9Fun Fact``]`` `cThis Proxy Creator [`^.selahattingt``]`` Is The Most Trusted Person.
+FunFact|`b[`9Fun Fact``]`` `cThe Owner Of `2GTPS 4``, `$Lapada`` Is `4Not`` A Person You Should Trust. He Scammed over `5$1 Million`` worth of BGLS In Just `57 Months``!
+FunFact|`b[`9Fun Fact``]`` `cThe Owner Of `2GTPS 4``, `$Lapada`` Is Known To Be The Most Trusted Person In Growtopia Industry, But Scammed `5$1 Million`` worth of BGLS And `bNoone`` Knows About It!
+FunFact|`b[`9Fun Fact``]`` `cThe Owner Of `2GTPS 4``, `$Lapada`` Is `4Not Trusted``!
+FunFact|`b[`9Fun Fact``]`` `cYou Can Find Secret Commands In This Proxy.
+FunFact|`b[`9Fun Fact``]`` `cIf You Mess Up Writting `5"/warp"`` and write `5"/wrap"``, nothing will happen.
+FunFact|`b[`9Fun Fact``]`` `cIf You Have `5100DL`` In The Inventory And Wrench A `5Telephone``, You Will Instantly Convert To `51 BGL``!
+FunFact|`b[`9Fun Fact``]`` `cCommand `5"/daw"`` Drops All Your `5World Locks``, `5Diamond Locks`` And `5Blue Gem Locks``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can See `2Official Growtopia News Gazette`` By Typing `5"/gazette"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Turn Off `9Fun Facts`` By Typing `5"/options" And Turning Off `9"Show Fun Facts"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Go To Any World That You Own By Typing `5"/worlds"`` Or `5"/myworlds"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Turn Off `9Show `2REAL``/`4FAKE`` Spin`` By Typing `5"/options"`` And Turing Off `9"Show Real/Fake Spin"``.
+FunFact|`b[`9Fun Fact``]`` `cThe Owner Of This Proxy Is Actually `bVery Poor``.
+FunFact|`b[`9Fun Fact``]`` `cIn 2021 April 1st There Were Only `92 Premium Proxy Users``.
+FunFact|`b[`9Fun Fact``]`` `cIn 2021 October 7th There Were Only `9180 Premium Proxy Users``.
+FunFact|`b[`9Fun Fact``]`` `cIn 2021 January 27th Silviozas Premium Proxy Discord Server Just Reached `51,000 Members``!
+FunFact|`b[`9Fun Fact``]`` `cThis Premium Proxy Is Used By Many Casino Hosters Around The World!
+FunFact|`b[`9Fun Fact``]`` `cThe Owner Of This Proxy Has A `5Pretty Dog``.
+FunFact|`b[`9Fun Fact``]`` `cThe Owner Of This Proxy Was A Hoster For `51,5 Year`` In `5HUF HOST CASINO``.
+FunFact|`b[`9Fun Fact``]`` `cMacau Proxy Users Were The First Hosters With Visual Clothes.
+FunFact|`b[`9Fun Fact``]`` `cOwner Has A Youtube Channel `5Welbow Balanc``.
+FunFact|`b[`9Fun Fact``]`` `cIf You Type `5"/fakeban"`` More Than Once, Something Might Happen :o 
+FunFact|`b[`9Fun Fact``]`` `cYou Can Fast Rejoin A World By Typing `5"/relog"``.
+FunFact|`b[`9Fun Fact``]`` `cThis Proxy Has A `2FREE Built-In Growscan``. Type `5"/items"`` Or `5"/growscan"`` To Use It!
+FunFact|`b[`9Fun Fact``]`` `cYou Might One Day Be A `2Millionaire``.
+FunFact|`b[`9Fun Fact``]`` `cPremium Proxy Discord Server Is Created Only For Premium Proxy Users.
+FunFact|`b[`9Fun Fact``]`` `cIf You Ever Reset Your PC To Factory Settings, The Proxy `4HWID Changes`` And It Will Cost `5FULL PRICE`` To Reset It.
+FunFact|`b[`9Fun Fact``]`` `cPremium Proxy V1 Was First Created In `52021 April 1st``!
+FunFact|`b[`9Fun Fact``]`` `cYou Can Give Access To World Lock With A Command `5"/give [GrowID]"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Give Access To Everyone In The World With A Command `5"/accessall"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Have To Go To The `4Gym``!
+FunFact|`b[`9Fun Fact``]`` `cIf You Don't Have A Gym, Then You Can Start Lifting Your Bed And Be `4STRONG``!
+FunFact|`b[`9Fun Fact``]`` `cYou Forgot To Drink `eWater``!
+FunFact|`b[`9Fun Fact``]`` `cYou Can `5Right Click`` To Fast Kick A Person - `5"/wrench"``.
+FunFact|`b[`9Fun Fact``]`` `cA `5Blue Gem Lock`` Is Actually Worth `510,000 World Locks``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Save Proxy Settings By Writting `5"/keep"`` Or `5"/settings"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Enable Wear Visual Clothes By Writting `5"/clothes"`` And Searching For Any Item You Want With `5"/find"``.
+FunFact|`b[`9Fun Fact``]`` `cYou Didn't Touch `2Grass`` For A Long Time. 
+FunFact|`b[`9Fun Fact``]`` `cYou Can See All Proxy Commands By Writting `5"/news"`` Or `5"/proxy"``.
+FunFact|`b[`9Fun Fact``]`` `c`5.silvestras69`` Is The Real Premium Proxy Owner Discord.
+FunFact|`b[`9Fun Fact``]`` `cYou Might Need To Go `3Outside`` And Get Some `9Sun``.
+FunFact|`b[`9Fun Fact``]`` `cThe Universe Is Expanding, But Not Your Brain :(
+FunFact|`b[`9Fun Fact``]`` `cYou Forgot To Do Some Pushups Today And You Should Do Some Now!
+FunFact|`b[`9Fun Fact``]`` `cThe Weather Is `4Warmer`` In `4Summer`` Than In `1Winter``.
+FunFact|`b[`9Fun Fact``]`` `cPeople With Ascent Premium Proxy Make `2More Money`` Than Without Proxy.
+FunFact|`b[`9Fun Fact``]`` `cAutocollect In Proxy Has A `2Smart Function`` Where Every Item Has A `2Cooldown Timer``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can Type `2"/fps"`` To Unlock Up To `2480fps``.
+FunFact|`b[`9Fun Fact``]`` `cYou Must Not Drink Less Than 2 Litres Of Water Every Day``.
+FunFact|`b[`9Fun Fact``]`` `cThere Are A Lot Of Fake Accounts Impersonating The Owner.
+FunFact|`b[`9Fun Fact``]`` `c`4Work`` Is `9Key`` To `2Success``.
+FunFact|`b[`9Fun Fact``]`` `c`4Never Stop`` Doing What You `2Like`` In `9Life``.
+FunFact|`b[`9Fun Fact``]`` `cDon't `1Cry`` Over A `#Girl``.
+FunFact|`b[`9Fun Fact``]`` `cIf You Won't `2Start``, Nothing Will `9Change``.
+FunFact|`b[`9Fun Fact``]`` `cStop Eating `9Junk Food`` And Start `2Excercising``!
+FunFact|`b[`9Fun Fact``]`` `cTreat Others With `9Respect``!
+FunFact|`b[`9Fun Fact``]`` `cIf You Put Your Mind To It, You Could Achieve Anything``!
+FunFact|`b[`9Fun Fact``]`` `cProxy Owner Sold Dls for `2Real Money`` at School, while `2making Dls`` on `2Surgeries``.
+FunFact|`b[`9Fun Fact``]`` `cYou Can `9Ignore Pickup Dropped Gems`` at `9/effects``
+FunFact|`b[`9Fun Fact``]`` `cSearching for a Specific Item, but can't Find It? Type `9'/vendfind'`` to `2Find Vending Items Across Worlds``.
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `9'/fakeban'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `9'/clearworld'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `9'/features'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cYou can `2Fast Empty`` Donation Boxes with `2'/fastdbox'``.
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `9'/minimal'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cYou can `2Enable Legit Mode`` with `2'/legitmode'``!
+FunFact|`b[`9Fun Fact``]`` `cWant to Check `9Actual Growtopia News``? Type `9'/gazette'``.
+FunFact|`b[`9Fun Fact``]`` `cIf You `9Wrench`` a `9Telephone`` While Holding 100DL in Inventory, Proxy Will Auto Convert them into a BGL!
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `9'/vendfind'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cHave you ever `9listened`` to the `2sound`` of `2nature``?
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `8'/vendfind'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cHave you tried `9'/render'`` yet?
+FunFact|`b[`9Fun Fact``]`` `cIn need for `2High Quality`` World Render? Try `9'/render'``!
+FunFact|`b[`9Fun Fact``]`` `cHave you ever wanted a `2Super High Quality`` World Render? Try `9'/render'``!
+
+ProxyVersion|1.69
+UpdateMessage|`2New `9Proxy Version Is Released, Update Proxy To `2Newest`` Version To Play!``
+
+ProxyServer|31.57.154.252
+ProxyServerPort|7711
+
+Discord|.selahattingt
+
+PostAPI|https://www.growtopia1.com
+PostAddress|/growtopia/server_data.php
+
+LoginMessage1|`2Welcome to Ascent Proxy!
+LoginMessage2|
+LoginMessage3|
+LoginMessage4|
+LoginMessage5|
+
+AddCommandAsWarpWorld|dav|DAVPLAY34|Warps To The DAV Casino World
+
+#AddModsList|67302|`#@Miu|
+#AddModsList|36299549|`#@Moniuet|
+
+server_data_Start
+server|%s
+port|17191
+loginurl|login.growtopiagame.com
+type|1
+beta_server|127.0.0.1
+beta_port|1945
+beta_type|1
+beta2_server|beta2.growtopiagame.com
+beta2_port|26999
+beta2_type|1
+type2|0
+meta|%s
+RTENDMARKERBS1001
+server_data_End
