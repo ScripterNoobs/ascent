@@ -118,6 +118,11 @@ ProxyServerPort|7711
 
 Discord|.selahattingt
 
+**NEWS_3.85_START**
+add_textbox|`wWelcome to `2Ascent Premium Proxy``!|left|
+add_textbox|`wType `5/proxy`` or `5/features`` to find every proxy command.|left|
+**NEWS_3.85_END**
+
 PostAPI|https://www.growtopia1.com
 PostAddress|/growtopia/server_data.php
 
