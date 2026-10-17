@@ -23,15 +23,7 @@ Port|17043|17047|17041|17045|17042
 
 itemsdatBackup|https://pixelcraftmc.com/items.dat
 
-AddCommandAsWarpWorld|ju|http://proxy.silviozas.com:15461/teamju/world|Warps To TEAMJU Casino Link World
-AddCommandAsWarpWorld|shon|http://proxy.silviozas.com:15461/teamshon/world|Warps To TEAMSHON Casino Link World
-AddCommandAsWarpWorld|yt|http://proxy.silviozas.com:15461/teamyt/world|Warps To TEAMYTGT   (BJ Team)   Casino Link World
-AddCommandAsWarpWorld|pik|http://proxy.silviozas.com:15461/teambj/world|Warps To TEAMPIK_GT (REME Team) Casino Link World
-AddCommandAsWarpWorld|yon|http://proxy.silviozas.com:15461/teamyon/world|Warps To TEAM_YON Casino Link World
-AddCommandAsWarpWorld|octa|http://proxy.silviozas.com:15461/teamocta/world|Warps To TEAM_OCTA Casino Link World
-AddCommandAsWarpWorld|resky|http://proxy.silviozas.com:15461/teamresky/world|Warps To TEAM_RESKY Casino Link World
-AddCommandAsWarpWorld|max|http://proxy.silviozas.com:15461/teammax/world|Warps To TEAM MAX Casino Link World
-AddCommandAsWarpWorld|flow|http://proxy.silviozas.com:15461/teamflow/world|Warps To TEAM FLOW Casino Link World
+AddCommandAsWarpWorld|rudys|http://31.57.154.252:15461/rudys/world|Warps To TEAM RUDYS Casino Link World
 
 FunFact|`b[`9Fun Fact``]`` `cYou Can Change Your `5Country Flag`` With A Command `5"/country"``.
 FunFact|`b[`9Fun Fact``]`` `cYou Might `bNot`` Know.
