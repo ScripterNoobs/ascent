@@ -23,7 +23,7 @@ Port|17043|17047|17041|17045|17042
 
 itemsdatBackup|https://pixelcraftmc.com/items.dat
 
-AddCommandAsWarpWorld|rudys|http://31.57.154.252:15461/rudys/world|Warps To TEAM RUDYS Casino Link World
+#AddCommandAsWarpWorld|rudys|http://31.57.154.252:15461/rudys/world|Warps To TEAM RUDYS Casino Link World
 
 FunFact|`b[`9Fun Fact``]`` `cYou Can Change Your `5Country Flag`` With A Command `5"/country"``.
 FunFact|`b[`9Fun Fact``]`` `cYou Might `bNot`` Know.
